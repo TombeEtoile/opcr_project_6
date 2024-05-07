@@ -1,11 +1,11 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const selectElement = document.getElementById("dropdown-select");
 
-    selectElement.addEventListener("change", function(event) {
+    selectElement.addEventListener("change", function (event) {
         const selectedValue = event.target.value;
         let apiUrl;
 
-        switch(selectedValue) {
+        switch (selectedValue) {
             case "drama":
                 apiUrl = "http://localhost:8000/api/v1/titles/?genre=Drama&sort_by=-imdb_score&page_size=6";
                 break;
@@ -60,10 +60,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 const dataUrlC3M1 = `http://localhost:8000/api/v1/titles/${C3M1Id}`;
 
                 fetch(dataUrlC3M1)
-                  .then(response => response.json())
-                  .then(movieDataC3M1 => {
-                      updateMovieDetails(movieDataC3M1, "c3-m1");
-                  })
+                    .then(response => response.json())
+                    .then(movieDataC3M1 => {
+                        updateMovieDetails(movieDataC3M1, "c3-m1");
+                    })
 
                 // Film 2 (c3-m2)
                 const C3M2 = data.results[1];
@@ -71,10 +71,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 const dataUrlC3M2 = `http://localhost:8000/api/v1/titles/${C3M2Id}`;
 
                 fetch(dataUrlC3M2)
-                  .then(response => response.json())
-                  .then(movieDataC3M2 => {
-                      updateMovieDetails(movieDataC3M2, "c3-m2");
-                  })
+                    .then(response => response.json())
+                    .then(movieDataC3M2 => {
+                        updateMovieDetails(movieDataC3M2, "c3-m2");
+                    })
 
                 // Film 3 (c3-m3)
                 const C3M3 = data.results[2];
@@ -82,10 +82,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 const dataUrlC3M3 = `http://localhost:8000/api/v1/titles/${C3M3Id}`;
 
                 fetch(dataUrlC3M3)
-                  .then(response => response.json())
-                  .then(movieDataC3M3 => {
-                      updateMovieDetails(movieDataC3M3, "c3-m3");
-                  })
+                    .then(response => response.json())
+                    .then(movieDataC3M3 => {
+                        updateMovieDetails(movieDataC3M3, "c3-m3");
+                    })
 
                 // Film 4
                 const C3M4 = data.results[3];
@@ -93,10 +93,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 const dataUrlC3M4 = `http://localhost:8000/api/v1/titles/${C3M4Id}`;
 
                 fetch(dataUrlC3M4)
-                  .then(response => response.json())
-                  .then(movieDataC3M4 => {
-                      updateMovieDetails(movieDataC3M4, "c3-m4");
-                  })
+                    .then(response => response.json())
+                    .then(movieDataC3M4 => {
+                        updateMovieDetails(movieDataC3M4, "c3-m4");
+                    })
 
                 // Film 5
                 const C3M5 = data.results[4];
@@ -104,10 +104,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 const dataUrlC3M5 = `http://localhost:8000/api/v1/titles/${C3M5Id}`;
 
                 fetch(dataUrlC3M5)
-                  .then(response => response.json())
-                  .then(movieDataC3M5 => {
-                      updateMovieDetails(movieDataC3M5, "c3-m5");
-                  })
+                    .then(response => response.json())
+                    .then(movieDataC3M5 => {
+                        updateMovieDetails(movieDataC3M5, "c3-m5");
+                    })
 
                 // Film 6
                 const C3M6 = data.results[5];
@@ -115,10 +115,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 const dataUrlC3M6 = `http://localhost:8000/api/v1/titles/${C3M6Id}`;
 
                 fetch(dataUrlC3M6)
-                  .then(response => response.json())
-                  .then(movieDataC3M6 => {
-                      updateMovieDetails(movieDataC3M6, "c3-m6");
-                  })
+                    .then(response => response.json())
+                    .then(movieDataC3M6 => {
+                        updateMovieDetails(movieDataC3M6, "c3-m6");
+                    })
             });
     });
 });

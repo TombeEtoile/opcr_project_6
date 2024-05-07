@@ -9,7 +9,6 @@ h3 {
 }
 
 
-
 /* HEADER */
 
 header {
@@ -19,28 +18,27 @@ header {
     background: #61787F;
     display: flex;
     align-items: center;
-    margin: 20px auto;  /* Centrer le header et ajuster la marge */
-    padding: 0 20px;  /* Ajouter un padding horizontal pour le contenu */
+    margin: 20px auto; /* Centrer le header et ajuster la marge */
+    padding: 0 20px; /* Ajouter un padding horizontal pour le contenu */
     border-radius: 8px;
 }
 
 .logo {
-    height: 80%;  /* Limitez la hauteur du logo pour qu'il s'intègre bien */
-    margin-right: 20px;  /* Espace entre le logo et le titre */
+    height: 80%; /* Limitez la hauteur du logo pour qu'il s'intègre bien */
+    margin-right: 20px; /* Espace entre le logo et le titre */
 }
 
 h1 {
-    font-size: 1.5em;  /* Ajustez la taille du texte si nécessaire */
-    white-space: nowrap;  /* Empêche le titre de passer à la ligne */
-    overflow: hidden;  /* Cache le texte qui dépasserait de l'en-tête */
-    text-overflow: ellipsis;  /* Ajoute des points de suspension si le texte est trop long */
+    font-size: 1.5em; /* Ajustez la taille du texte si nécessaire */
+    white-space: nowrap; /* Empêche le titre de passer à la ligne */
+    overflow: hidden; /* Cache le texte qui dépasserait de l'en-tête */
+    text-overflow: ellipsis; /* Ajoute des points de suspension si le texte est trop long */
 }
-
 
 
 /* CATÉGORIE MEILLEUR FILM */
 
-    .best-film {
+.best-film {
     background-color: #F2F2F2;
     border-radius: 8px;
     overflow: hidden;
@@ -48,10 +46,10 @@ h1 {
     align-items: center;
     padding: 0;
     margin: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-  .best-film-image {
+.best-film-image {
     width: 30%;
     background-color: #333;
     color: white;
@@ -59,26 +57,26 @@ h1 {
     align-items: center;
     justify-content: center;
     height: 200px; /* Adjust as needed */
-  }
+}
 
-  .best-film .movie-detail {
+.best-film .movie-detail {
     width: 70%;
     padding: 20px;
-  }
+}
 
-  .best-film h3 {
+.best-film h3 {
     margin: 0;
     color: #E50914; /* Netflix red */
     font-size: 24px;
-  }
+}
 
-  .best-film p {
+.best-film p {
     font-size: 14px;
     color: #333;
     line-height: 1.6;
-  }
+}
 
-  .best-film button {
+.best-film button {
     background-color: #E50914;
     color: white;
     border: none;
@@ -87,12 +85,11 @@ h1 {
     border-radius: 4px;
     font-size: 14px;
     margin-top: 12px;
-  }
+}
 
-  .best-film button:hover {
+.best-film button:hover {
     background-color: #e08e12;
-  }
-
+}
 
 
 /* STYLE DE TOUTES LES CATÉGORIES */
@@ -158,7 +155,6 @@ h1 {
 }
 
 
-
 /* FENÊTRE MODAL */
 
 .open-modal {
@@ -206,15 +202,14 @@ h1 {
 }
 
 li {
-  display: flex;
-  align-items: center; /* Cette propriété assure que les éléments sont alignés verticalement au centre */
+    display: flex;
+    align-items: center; /* Cette propriété assure que les éléments sont alignés verticalement au centre */
 }
 
 h4, p {
-  margin: 0; /* Enlève les marges par défaut pour une meilleure contrôle de l'espacement */
-  display: inline-block; /* Garantit que les éléments sont traités comme des blocs en ligne */
+    margin: 0; /* Enlève les marges par défaut pour une meilleure contrôle de l'espacement */
+    display: inline-block; /* Garantit que les éléments sont traités comme des blocs en ligne */
 }
-
 
 
 /* BOUTON "VOIR PLUS" */
@@ -233,7 +228,6 @@ h4, p {
     cursor: pointer;
     display: block; /* Centrer le bouton */
 }
-
 
 
 /* MENU DEROULANT */
@@ -295,12 +289,12 @@ h4, p {
 }
 
 
-
 /* MEDIA QUERIES */
 @media (max-width: 900px) {
     .movie {
         flex-basis: calc(50% - 20px); /* Deux films par ligne */
     }
+
     .movie:nth-of-type(n+3) { /* Masquer tous sauf les deux premiers pour les tablettes */
         display: none;
     }
@@ -310,6 +304,7 @@ h4, p {
     .movie {
         flex-basis: 100%; /* Un film par ligne */
     }
+
     .movie:nth-of-type(n+3) { /* Masquer tous sauf les deux premiers pour les mobiles */
         display: none;
     }
