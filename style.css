@@ -1,0 +1,326 @@
+/* ALL */
+
+* {
+    box-sizing: border-box;
+}
+
+h3 {
+    color: white;
+}
+
+
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 122px;
+    border: 1px solid #000;
+    background: #61787F;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;  /* Centrer le header et ajuster la marge */
+    padding: 0 20px;  /* Ajouter un padding horizontal pour le contenu */
+    border-radius: 8px;
+}
+
+.logo {
+    height: 80%;  /* Limitez la hauteur du logo pour qu'il s'intègre bien */
+    margin-right: 20px;  /* Espace entre le logo et le titre */
+}
+
+h1 {
+    font-size: 1.5em;  /* Ajustez la taille du texte si nécessaire */
+    white-space: nowrap;  /* Empêche le titre de passer à la ligne */
+    overflow: hidden;  /* Cache le texte qui dépasserait de l'en-tête */
+    text-overflow: ellipsis;  /* Ajoute des points de suspension si le texte est trop long */
+}
+
+
+
+/* CATÉGORIE MEILLEUR FILM */
+
+    .best-film {
+    background-color: #F2F2F2;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .best-film-image {
+    width: 30%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px; /* Adjust as needed */
+  }
+
+  .best-film .movie-detail {
+    width: 70%;
+    padding: 20px;
+  }
+
+  .best-film h3 {
+    margin: 0;
+    color: #E50914; /* Netflix red */
+    font-size: 24px;
+  }
+
+  .best-film p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .best-film button {
+    background-color: #E50914;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  .best-film button:hover {
+    background-color: #e08e12;
+  }
+
+
+
+/* STYLE DE TOUTES LES CATÉGORIES */
+
+.movies_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 10px;
+}
+
+.movie {
+    flex-basis: calc(33.333% - 20px); /* Trois films par ligne avec une marge */
+    margin: 10px;
+}
+
+.movie_image-container {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* Aspect ratio 1:1 */
+    background: lightgray;
+}
+
+.movie_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 16%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie_overlay {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.movie_overlay {
+    opacity: 1;
+}
+
+.movie_title, .movie_button {
+    color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.movie_button {
+    border: none;
+    border-radius: 25px;
+    padding: 5px 10px;
+    background: black;
+    cursor: pointer;
+}
+
+
+
+/* FENÊTRE MODAL */
+
+.open-modal {
+    cursor: pointer;
+}
+
+.overlay-best-film, .overlay-c1-m1, .overlay-c1-m2, .overlay-c1-m3, .overlay-c1-m4, .overlay-c1-m5, .overlay-c1-m6, .overlay-c2-m1, .overlay-c2-m2, .overlay-c2-m3, .overlay-c2-m4, .overlay-c2-m5, .overlay-c2-m6, .overlay-c3-m1, .overlay-c3-m2, .overlay-c3-m3, .overlay-c3-m4, .overlay-c3-m5, .overlay-c3-m6 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.modal-best-film, .modal-c1-m1, .modal-c1-m2, .modal-c1-m3, .modal-c1-m4, .modal-c1-m5, .modal-c1-m6, .modal-c2-m1, .modal-c2-m2, .modal-c2-m3, .modal-c2-m4, .modal-c2-m5, .modal-c2-m6, .modal-c3-m1, .modal-c3-m2, .modal-c3-m3, .modal-c3-m4, .modal-c3-m5, .modal-c3-m6 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 3px;
+    padding: 20px;
+    display: none;
+    z-index: 1000;
+}
+
+.modal--open {
+    display: block;
+}
+
+.modal__close {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    cursor: pointer;
+}
+
+.modal__footer__button {
+    cursor: pointer;
+}
+
+li {
+  display: flex;
+  align-items: center; /* Cette propriété assure que les éléments sont alignés verticalement au centre */
+}
+
+h4, p {
+  margin: 0; /* Enlève les marges par défaut pour une meilleure contrôle de l'espacement */
+  display: inline-block; /* Garantit que les éléments sont traités comme des blocs en ligne */
+}
+
+
+
+/* BOUTON "VOIR PLUS" */
+
+.hidden {
+    display: none;
+}
+
+.show_more_button_c1 .show_more_button_c2 .show_more_button_c3 {
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #61787F;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block; /* Centrer le bouton */
+}
+
+
+
+/* MENU DEROULANT */
+
+.dropdown {
+    display: flex;
+    align-items: center;
+}
+
+/* Style du texte "Autres catégories : " */
+.dropdown span {
+    margin-right: 10px;
+}
+
+/* Style de la boîte de sélection */
+.select-box {
+    position: relative;
+}
+
+.select-box select {
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* Style des options dans le menu déroulant */
+.select-box select option {
+    padding: 8px;
+}
+
+/* Style de la flèche du menu déroulant */
+.select-box select::-ms-expand {
+    display: none;
+}
+
+.select-box select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 1.5em auto, 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Style du triangle */
+.select-box::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+    transform: translateY(-50%);
+}
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 900px) {
+    .movie {
+        flex-basis: calc(50% - 20px); /* Deux films par ligne */
+    }
+    .movie:nth-of-type(n+3) { /* Masquer tous sauf les deux premiers pour les tablettes */
+        display: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .movie {
+        flex-basis: 100%; /* Un film par ligne */
+    }
+    .movie:nth-of-type(n+3) { /* Masquer tous sauf les deux premiers pour les mobiles */
+        display: none;
+    }
+}
+
+/* Cache tous les films supplémentaires */
+.movie:nth-child(n+3) {
+    display: none;
+}
+
+/* Affiche tous les films quand la classe 'show_all_movies' est présente */
+.show_all_movies .movie {
+    display: block;
+}

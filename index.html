@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustStreamIt - Vidéos à la demande</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <script src="zzz_best_film/best_film.js"></script>
+    <script src="zzz_c1/categorie_1.js"></script>
+    <script src="zzz_c2/categorie_2.js"></script>
+    <script src="zzz_c3/categorie_3.js"></script>
+</head>
+<body>
+
+<header>
+    <img class="logo" src="img/juststreamit_logo.png" alt="Logo JustSTreamIt">
+    <h1>Vidéos à la demande</h1>
+</header>
+
+<div class="best-film">
+    <div class="best-film-image"><img id="best_film_image_id" src="img/blank-profile-picture.webp" alt="Titanic"/>
+    </div>
+    <div class="movie-detail">
+        <h3 id="best-film-title">The Big Lebowski</h3>
+        <p id="best-film-description">Nous n'avons pas réussi à trouver la description de ce film.</p>
+
+        <button class="open-modal" onclick="openModalBestFilm()">Détails</button>
+        <div class="overlay-best-film"></div>
+        <div class="modal-best-film">
+            <div class="modal__header">
+                <div class="modal__close" onclick="closeModalBestFilm()">X</div>
+                <h2 class="modal__header__title" id="best-film-modal-title">Test H2 - Best film</h2>
+            </div>
+            <div class="modal__body">
+                <ul>
+                    <li id="genres">
+                        <h4>Genre : </h4>
+                        <p id="genres-best-film">teste h4</p>
+                    </li>
+                    <li id="year">
+                        <h4>Date de sortie : </h4>
+                        <p id="year-best-film">teste h4</p>
+                    </li>
+                    <li id="classification">
+                        <h4>Classification : </h4>
+                        <p id="classification-best-film">tout âge</p>
+                    </li>
+                    <li id="imdb-score">
+                        <h4>Score IMDB : </h4>
+                        <p id="imdb-score-best-film">teste h4</p>
+                    </li>
+                    <li id="directors">
+                        <h4>Réalisateur : </h4>
+                        <p id="directors-best-film">teste h4</p>
+                    </li>
+                    <li id="actors">
+                        <h4>Acteurs : </h4>
+                        <p id="actors-best-film">teste h4</p>
+                    </li>
+                    <li id="duration">
+                        <h4>Durée : </h4>
+                        <p id="duration-best-film">teste h4</p>
+                    </li>
+                    <li id="native-country">
+                        <h4>Pays d’origine : </h4>
+                        <p id="native-country-best-film">teste h4</p>
+                    </li>
+                    <li id="box-office-revenue">
+                        <h4>Recettes au box-office : </h4>
+                        <p id="box-office-revenue-best-film">teste h4</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal__footer">
+                <button class="modal__footer__button" onclick="closeModalBestFilm()">Fermer</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<h2>Mystery</h2>
+<div class="movies_container" id="moviesContainerC1">
+    <div class="movie">
+        <div class="movie_image-container">
+            <img class="movie_image" id="c1-m1-image" src="img/blank-profile-picture.webp" alt="Titanic"/>
+            <div class="movie_overlay">
+                <div class="movie_title">
+                    <h3 id="c1-m1-title">c1-m1</h3>
+                </div>
+
+                <button class="open-modal" onclick="openModalC1M1()">Détails</button>
+                <div class="overlay-c1-m1"></div>
+                <div class="modal-c1-m1">
+                    <div class="modal__header">
+                        <div class="modal__close" onclick="closeModalC1M1()">X</div>
+                        <h2 class="modal__header__title" id="c1-m1-modal-title">Test H2 - C1-M1</h2>
+                    </div>
+                    <div class="modal__body">
+                        <ul>
+                            <li id="genres">
+                                <h4>Genre : </h4>
+                                <p id="genres-c1-m1">teste h4</p>
+                            </li>
+                            <li id="year">
+                                <h4>Date de sortie : </h4>
+                                <p id="year-c1-m1">teste h4</p>
+                            </li>
+                            <li id="classification">
+                                <h4>Classification : </h4>
+                                <p id="classification-c1-m1">tout âge</p>
+                            </li>
+                            <li id="imdb-score">
+                                <h4>Score IMDB : </h4>
+                                <p id="imdb-score-c1-m1">teste h4</p>
+                            </li>
+                            <li id="directors">
+                                <h4>Réalisateur : </h4>
+                                <p id="directors-c1-m1">teste h4</p>
+                            </li>
+                            <li id="actors">
+                                <h4>Acteurs : </h4>
+                                <p id="actors-c1-m1">teste h4</p>
+                            </li>
+                            <li id="duration">
+                                <h4>Durée : </h4>
+                                <p id="duration-c1-m1">teste h4</p>
+                            </li>
+                            <li id="native-country">
+                                <h4>Pays d’origine : </h4>
+                                <p id="native-country-c1-m1">teste h4</p>
+                            </li>
+                            <li id="box-office-revenue">
+                                <h4>Recettes au box-office : </h4>
+                                <p id="box-office-revenue-c1-m1">teste h4</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="modal__footer__button" onclick="closeModalC1M1()">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="movie">
+        <div class="movie_image-container">
+            <img class="movie_image" id="c1-m2-image" src="img/blank-profile-picture.webp" alt="Titanic"/>
+            <div class="movie_overlay">
+                <div class="movie_title">
+                    <h3 id="c1-m2-title">c1-m2</h3>
+                </div>
+
+                <button class="open-modal" onclick="openModalC1M2()">Détails</button>
+                <div class="overlay-c1-m2"></div>
+                <div class="modal-c1-m2">
+                    <div class="modal__header">
+                        <div class="modal__close" onclick="closeModalC1M2()">X</div>
+                        <h2 class="modal__header__title" id="c1-m2-modal-title">Test H2 - C1-M2</h2>
+                    </div>
+                    <div class="modal__body">
+                        <ul>
+                            <li id="genres">
+                                <h4>Genre : </h4>
+                                <p id="genres-c1-m2">teste h4</p>
+                            </li>
+                            <li id="year">
+                                <h4>Date de sortie : </h4>
+                                <p id="year-c1-m2">teste h4</p>
+                            </li>
+                            <li id="classification">
+                                <h4>Classification : </h4>
+                                <p id="classification-c1-m2">tout âge</p>
+                            </li>
+                            <li id="imdb-score">
+                                <h4>Score IMDB : </h4>
+                                <p id="imdb-score-c1-m2">teste h4</p>
+                            </li>
+                            <li id="directors">
+                                <h4>Réalisateur : </h4>
+                                <p id="directors-c1-m2">teste h4</p>
+                            </li>
+                            <li id="actors">
+                                <h4>Acteurs : </h4>
+                                <p id="actors-c1-m2">teste h4</p>
+                            </li>
+                            <li id="duration">
+                                <h4>Durée : </h4>
+                                <p id="duration-c1-m2">teste h4</p>
+                            </li>
+                            <li id="native-country">
+                                <h4>Pays d’origine : </h4>
+                                <p id="native-country-c1-m2">teste h4</p>
+                            </li>
+                            <li id="box-office-revenue">
+                                <h4>Recettes au box-office : </h4>
+                                <p id="box-office-revenue-c1-m2">teste h4</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="modal__footer__button" onclick="closeModalC1M2()">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="movie">
+        <div class="movie_image-container">
+            <img class="movie_image" id="c1-m3-image" src="img/blank-profile-picture.webp" alt="Titanic"/>
+            <div class="movie_overlay">
+                <div class="movie_title">
+                    <h3 id="c1-m3-title">c1-m3</h3>
+                </div>
+
+                <button class="open-modal" onclick="openModalC1M3()">Détails</button>
+                <div class="overlay-c1-m3"></div>
+                <div class="modal-c1-m3">
+                    <div class="modal__header">
+                        <div class="modal__close" onclick="closeModalC1M3()">X</div>
+                        <h2 class="modal__header__title" id="c1-m3-modal-title">Test H2 - C1-M3</h2>
+                    </div>
+                    <div class="modal__body">
+                        <ul>
+                            <li id="genres">
+                                <h4>Genre : </h4>
+                                <p id="genres-c1-m3">teste h4</p>
+                            </li>
+                            <li id="year">
+                                <h4>Date de sortie : </h4>
+                                <p id="year-c1-m3">teste h4</p>
+                            </li>
+                            <li id="classification">
+                                <h4>Classification : </h4>
+                                <p id="classification-c1-m3">tout âge</p>
+                            </li>
+                            <li id="imdb-score">
+                                <h4>Score IMDB : </h4>
+                                <p id="imdb-score-c1-m3">teste h4</p>
+                            </li>
+                            <li id="directors">
+                                <h4>Réalisateur : </h4>
+                                <p id="directors-c1-m3">teste h4</p>
+                            </li>
+                            <li id="actors">
+                                <h4>Acteurs : </h4>
+                                <p id="actors-c1-m3">teste h4</p>
+                            </li>
+                            <li id="duration">
+                                <h4>Durée : </h4>
+                                <p id="duration-c1-m3">teste h4</p>
+                            </li>
+                            <li id="native-country">
+                                <h4>Pays d’origine : </h4>
+                                <p id="native-country-c1-m3">teste h4</p>
+                            </li>
+                            <li id="box-office-revenue">
+                                <h4>Recettes au box-office : </h4>
+                                <p id="box-office-revenue-c1-m3">teste h4</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="modal__footer__button" onclick="closeModalC1M3()">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="movie">
+        <div class="movie_image-container">
+            <img class="movie_image" id="c1-m4-image" src="img/blank-profile-picture.webp" alt="Titanic"/>
+            <div class="movie_overlay">
+                <div class="movie_title">
+                    <h3 id="c1-m4-title">c1-m4</h3>
+                </div>
+
+                <button class="open-modal" onclick="openModalC1M4()">Détails</button>
+                <div class="overlay-c1-m4"></div>
+                <div class="modal-c1-m4">
+                    <div class="modal__header">
+                        <div class="modal__close" onclick="closeModalC1M4()">X</div>
+                        <h2 class="modal__header__title" id="c1-m4-modal-title">Test H2 - C1-M4</h2>
+                    </div>
+                    <div class="modal__body">
+                        <ul>
+                            <li id="genres">
+                                <h4>Genre : </h4>
+                                <p id="genres-c1-m4">teste h4</p>
+                            </li>
+                            <li id="year">
+                                <h4>Date de sortie : </h4>
+                                <p id="year-c1-m4">teste h4</p>
+                            </li>
+                            <li id="classification">
+                                <h4>Classification : </h4>
+                                <p id="classification-c1-m4">tout âge</p>
+                            </li>
+                            <li id="imdb-score">
+                                <h4>Score IMDB : </h4>
+                                <p id="imdb-score-c1-m4">teste h4</p>
+                            </li>
+                            <li id="directors">
+                                <h4>Réalisateur : </h4>
+                                <p id="directors-c1-m4">teste h4</p>
+                            </li>
+                            <li id="actors">
+                                <h4>Acteurs : </h4>
+                                <p id="actors-c1-m4">teste h4</p>
+                            </li>
+                            <li id="duration">
+                                <h4>Durée : </h4>
+                                <p id="duration-c1-m4">teste h4</p>
+                            </li>
+                            <li id="native-country">
+                                <h4>Pays d’origine : </h4>
+                                <p id="native-country-c1-m4">teste h4</p>
+                            </li>
+                            <li id="box-office-revenue">
+                                <h4>Recettes au box-office : </h4>
+                                <p id="box-office-revenue-c1-m4">teste h4</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="modal__footer__button" onclick="closeModalC1M4()">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="movie">
+        <div class="movie_image-container">
+            <img class="movie_image" id="c1-m5-image" src="img/blank-profile-picture.webp" alt="Titanic"/>
+            <div class="movie_overlay">
+                <div class="movie_title">
+                    <h3 id="c1-m5-title">c1-m5</h3>
+                </div>
+
+                <button class="open-modal" onclick="openModalC1M5()">Détails</button>
+                <div class="overlay-c1-m5"></div>
+                <div class="modal-c1-m5">
+                    <div class="modal__header">
+                        <div class="modal__close" onclick="closeModalC1M5()">X</div>
+                        <h2 class="modal__header__title" id="c1-m5-modal-title">Test H2 - C1-M5</h2>
+                    </div>
+                    <div class="modal__body">
+                        <ul>
+                            <li id="genres">
+                                <h4>Genre : </h4>
+                                <p id="genres-c1-m5">teste h4</p>
+                            </li>
+                            <li id="year">
+                                <h4>Date de sortie : </h4>
+                                <p id="year-c1-m5">teste h4</p>
+                            </li>
+                            <li id="classification">
+                                <h4>Classification : </h4>
+                                <p id="classification-c1-m5">tout âge</p>
+                            </li>
+                            <li id="imdb-score">
+                                <h4>Score IMDB : </h4>
+                                <p id="imdb-score-c1-m5">teste h4</p>
+                            </li>
+                            <li id="directors">
+                                <h4>Réalisateur : </h4>
+                                <p id="directors-c1-m5">teste h4</p>
+                            </li>
+                            <li id="actors">
+                                <h4>Acteurs : </h4>
+                                <p id="actors-c1-m5">teste h4</p>
+                            </li>
+                            <li id="duration">
+                                <h4>Durée : </h4>
+                                <p id="duration-c1-m5">teste h4</p>
+                            </li>
+                            <li id="native-country">
+                                <h4>Pays d’origine : </h4>
+                                <p id="native-country-c1-m5">teste h4</p>
+                            </li>
+                            <li id="box-office-revenue">
+                                <h4>Recettes au box-office : </h4>
+                                <p id="box-office-revenue-c1-m5">teste h4</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="modal__footer__button" onclick="closeModalC1M5()">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="movie">
+        <div class="movie_image-container">
+            <img class="movie_image" id="c1-m6-image" src="img/blank-profile-picture.webp" alt="Titanic"/>
+            <div class="movie_overlay">
+                <div class="movie_title">
+                    <h3 id="c1-m6-title">c1-m6</h3>
+                </div>
+
+                <button class="open-modal" onclick="openModalC1M6()">Détails</button>
+                <div class="overlay-c1-m6"></div>
+                <div class="modal-c1-m6">
+                    <div class="modal__header">
+                        <div class="modal__close" onclick="closeModalC1M6()">X</div>
+                        <h2 class="modal__header__title" id="c1-m6-modal-title">Test H2 - C1-M6</h2>
+                    </div>
+                    <div class="modal__body">
+                        <ul>
+                            <li id="genres">
+                                <h4>Genre : </h4>
+                                <p id="genres-c1-m6">teste h4</p>
+                            </li>
+                            <li id="year">
+                                <h4>Date de sortie : </h4>
+                                <p id="year-c1-m6">teste h4</p>
+                            </li>
+                            <li id="classification">
+                                <h4>Classification : </h4>
+                                <p id="classification-c1-m6">tout âge</p>
+                            </li>
+                            <li id="imdb-score">
+                                <h4>Score IMDB : </h4>
+                                <p id="imdb-score-c1-m6">teste h4</p>
+                            </li>
+                            <li id="directors">
+                                <h4>Réalisateur : </h4>
+                                <p id="directors-c1-m6">teste h4</p>
+                            </li>
+                            <li id="actors">
+                                <h4>Acteurs : </h4>
+                                <p id="actors-c1-m6">teste h4</p>
+                            </li>
+                            <li id="duration">
+                                <h4>Durée : </h4>
+                                <p id="duration-c1-m6">teste h4</p>
+                            </li>
+                            <li id="native-country">
+                                <h4>Pays d’origine : </h4>
+                                <p id="native-country-c1-m6">teste h4</p>
+                            </li>
+                            <li id="box-office-revenue">
+                                <h4>Recettes au box-office : </h4>
+                                <p id="box-office-revenue-c1-m6">teste h4</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="modal__footer__button" onclick="closeModalC1M6()">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<button class="show_more_button_c1" onclick="toggleMoviesVisibilityC1()">Voir plus</button>
+
+
+<h2>Action</h2>
+<div class="movies_container" id="moviesContainerC2">
+    <div class="movie">
+        <div class="movie_image-container">
+            <img class="movie_image" id="c2-m1-image" src="img/blank-profile-picture.webp" alt="Titanic"/>
+            <div class="movie_overlay">
+                <div class="movie_title">
+                    <h3 id="c2-m1-title">c2-m1</h3>
+                </div>
+
+                <button class="open-modal" onclick="openModalC2M1()">Détails</button>
+                <div class="overlay-c2-m1"></div>
+                <div class="modal-c2-m1">
+                    <div class="modal__header">
+                        <div class="modal__close" onclick="closeModalC2M1()">X</div>
+                        <h2 class="modal__header__title" id="c2-m1-modal-title">Test H2 - C2-M1</h2>
+                    </div>
+                    <div class="modal__body">
+                        <ul>
+                            <li id="genres">
+                                <h4>Genre : </h4>
+                                <p id="genres-c2-m1">teste h4</p>
+                            </li>
+                            <li id="year">
+                                <h4>Date de sortie : </h4>
+                                <p id="year-c2-m1">teste h4</p>
+                            </li>
+                            <li id="classification">
+                                <h4>Classification : </h4>
+                                <p id="classification-c2-m1">tout âge</p>
+                            </li>
+                            <li id="imdb-score">
+                                <h4>Score IMDB : </h4>
+                                <p id="imdb-score-c2-m1">teste h4</p>
+                            </li>
+                            <li id="directors">
+                                <h4>Réalisateur : </h4>
+                                <p id="directors-c2-m1">teste h4</p>
+                            </li>
+                            <li id="actors">
+                                <h4>Acteurs : </h4>
+                                <p id="actors-c2-m1">teste h4</p>
+                            </li>
+                            <li id="duration">
+                                <h4>Durée : </h4>
+                                <p id="duration-c2-m1">teste h4</p>
+                            </li>
+                            <li id="native-country">
+                                <h4>Pays d’origine : </h4>
+                                <p id="native-country-c2-m1">teste h4</p>
+                            </li>
+                            <li id="box-office-revenue">
+                                <h4>Recettes au box-office : </h4>
+                                <p id="box-office-revenue-c2-m1">teste h4</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="modal__footer__button" onclick="closeModalC2M1()">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="movie">
+        <div class="movie_image-container">
+            <img class="movie_image" id="c2-m2-image" src="img/blank-profile-picture.webp" alt="Titanic"/>
+            <div class="movie_overlay">
+                <div class="movie_title">
+                    <h3 id="c2-m2-title">c2-m2</h3>
+                </div>
+
+                <button class="open-modal" onclick="openModalC2M2()">Détails</button>
+                <div class="overlay-c2-m2"></div>
+                <div class="modal-c2-m2">
+                    <div class="modal__header">
+                        <div class="modal__close" onclick="closeModalC2M2()">X</div>
+                        <h2 class="modal__header__title" id="c2-m2-modal-title">Test H2 - C2-M2</h2>
+                    </div>
+                    <div class="modal__body">
+                        <ul>
+                            <li id="genres">
+                                <h4>Genre : </h4>
+                                <p id="genres-c2-m2">teste h4</p>
+                            </li>
+                            <li id="year">
+                                <h4>Date de sortie : </h4>
+                                <p id="year-c2-m2">teste h4</p>
+                            </li>
+                            <li id="classification">
+                                <h4>Classification : </h4>
+                                <p id="classification-c2-m2">tout âge</p>
+                            </li>
+                            <li id="imdb-score">
+                                <h4>Score IMDB : </h4>
+                                <p id="imdb-score-c2-m2">teste h4</p>
+                            </li>
+                            <li id="directors">
+                                <h4>Réalisateur : </h4>
+                                <p id="directors-c2-m2">teste h4</p>
+                            </li>
+                            <li id="actors">
+                                <h4>Acteurs : </h4>
+                                <p id="actors-c2-m2">teste h4</p>
+                            </li>
+                            <li id="duration">
+                                <h4>Durée : </h4>
+                                <p id="duration-c2-m2">teste h4</p>
+                            </li>
+                            <li id="native-country">
+                                <h4>Pays d’origine : </h4>
+                                <p id="native-country-c2-m2">teste h4</p>
+                            </li>
+                            <li id="box-office-revenue">
+                                <h4>Recettes au box-office : </h4>
+                                <p id="box-office-revenue-c2-m2">teste h4</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="modal__footer__button" onclick="closeModalC2M2()">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="movie">
+        <div class="movie_image-container">
+            <img class="movie_image" id="c2-m3-image" src="img/blank-profile-picture.webp" alt="Titanic"/>
+            <div class="movie_overlay">
+                <div class="movie_title">
+                    <h3 id="c2-m3-title">c2-m3</h3>
+                </div>
+
+                <button class="open-modal" onclick="openModalC2M3()">Détails</button>
+                <div class="overlay-c2-m3"></div>
+                <div class="modal-c2-m3">
+                    <div class="modal__header">
+                        <div class="modal__close" onclick="closeModalC2M3()">X</div>
+                        <h2 class="modal__header__title" id="c2-m3-modal-title">Test H2 - C2-M3</h2>
+                    </div>
+                    <div class="modal__body">
+                        <ul>
+                            <li id="genres">
+                                <h4>Genre : </h4>
+                                <p id="genres-c2-m3">teste h4</p>
+                            </li>
+                            <li id="year">
+                                <h4>Date de sortie : </h4>
+                                <p id="year-c2-m3">teste h4</p>
+                            </li>
+                            <li id="classification">
+                                <h4>Classification : </h4>
+                                <p id="classification-c2-m3">tout âge</p>
+                            </li>
+                            <li id="imdb-score">
+                                <h4>Score IMDB : </h4>
+                                <p id="imdb-score-c2-m3">teste h4</p>
+                            </li>
+                            <li id="directors">
+                                <h4>Réalisateur : </h4>
+                                <p id="directors-c2-m3">teste h4</p>
+                            </li>
+                            <li id="actors">
+                                <h4>Acteurs : </h4>
+                                <p id="actors-c2-m3">teste h4</p>
+                            </li>
+                            <li id="duration">
+                                <h4>Durée : </h4>
+                                <p id="duration-c2-m3">teste h4</p>
+                            </li>
+                            <li id="native-country">
+                                <h4>Pays d’origine : </h4>
+                                <p id="native-country-c2-m3">teste h4</p>
+                            </li>
+                            <li id="box-office-revenue">
+                                <h4>Recettes au box-office : </h4>
+                                <p id="box-office-revenue-c2-m3">teste h4</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="modal__footer__button" onclick="closeModalC2M3()">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="movie">
+        <div class="movie_image-container">
+            <img class="movie_image" id="c2-m4-image" src="img/blank-profile-picture.webp" alt="Titanic"/>
+            <div class="movie_overlay">
+                <div class="movie_title">
+                    <h3 id="c2-m4-title">c2-m4</h3>
+                </div>
+
+                <button class="open-modal" onclick="openModalC2M4()">Détails</button>
+                <div class="overlay-c2-m4"></div>
+                <div class="modal-c2-m4">
+                    <div class="modal__header">
+                        <div class="modal__close" onclick="closeModalC2M4()">X</div>
+                        <h2 class="modal__header__title" id="c2-m4-modal-title">Test H2 - C2-M4</h2>
+                    </div>
+                    <div class="modal__body">
+                        <ul>
+                            <li id="genres">
+                                <h4>Genre : </h4>
+                                <p id="genres-c2-m4">teste h4</p>
+                            </li>
+                            <li id="year">
+                                <h4>Date de sortie : </h4>
+                                <p id="year-c2-m4">teste h4</p>
+                            </li>
+                            <li id="classification">
+                                <h4>Classification : </h4>
+                                <p id="classification-c2-m4">tout âge</p>
+                            </li>
+                            <li id="imdb-score">
+                                <h4>Score IMDB : </h4>
+                                <p id="imdb-score-c2-m4">teste h4</p>
+                            </li>
+                            <li id="directors">
+                                <h4>Réalisateur : </h4>
+                                <p id="directors-c2-m4">teste h4</p>
+                            </li>
+                            <li id="actors">
+                                <h4>Acteurs : </h4>
+                                <p id="actors-c2-m4">teste h4</p>
+                            </li>
+                            <li id="duration">
+                                <h4>Durée : </h4>
+                                <p id="duration-c2-m4">teste h4</p>
+                            </li>
+                            <li id="native-country">
+                                <h4>Pays d’origine : </h4>
+                                <p id="native-country-c2-m4">teste h4</p>
+                            </li>
+                            <li id="box-office-revenue">
+                                <h4>Recettes au box-office : </h4>
+                                <p id="box-office-revenue-c2-m4">teste h4</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="modal__footer__button" onclick="closeModalC2M4()">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="movie">
+        <div class="movie_image-container">
+            <img class="movie_image" id="c2-m5-image" src="img/blank-profile-picture.webp" alt="Titanic"/>
+            <div class="movie_overlay">
+                <div class="movie_title">
+                    <h3 id="c2-m5-title">c2-m5</h3>
+                </div>
+
+                <button class="open-modal" onclick="openModalC2M5()">Détails</button>
+                <div class="overlay-c2-m5"></div>
+                <div class="modal-c2-m5">
+                    <div class="modal__header">
+                        <div class="modal__close" onclick="closeModalC2M5()">X</div>
+                        <h2 class="modal__header__title" id="c2-m5-modal-title">Test H2 - C2-M5</h2>
+                    </div>
+                    <div class="modal__body">
+                        <ul>
+                            <li id="genres">
+                                <h4>Genre : </h4>
+                                <p id="genres-c2-m5">teste h4</p>
+                            </li>
+                            <li id="year">
+                                <h4>Date de sortie : </h4>
+                                <p id="year-c2-m5">teste h4</p>
+                            </li>
+                            <li id="classification">
+                                <h4>Classification : </h4>
+                                <p id="classification-c2-m5">tout âge</p>
+                            </li>
+                            <li id="imdb-score">
+                                <h4>Score IMDB : </h4>
+                                <p id="imdb-score-c2-m5">teste h4</p>
+                            </li>
+                            <li id="directors">
+                                <h4>Réalisateur : </h4>
+                                <p id="directors-c2-m5">teste h4</p>
+                            </li>
+                            <li id="actors">
+                                <h4>Acteurs : </h4>
+                                <p id="actors-c2-m5">teste h4</p>
+                            </li>
+                            <li id="duration">
+                                <h4>Durée : </h4>
+                                <p id="duration-c2-m5">teste h4</p>
+                            </li>
+                            <li id="native-country">
+                                <h4>Pays d’origine : </h4>
+                                <p id="native-country-c2-m5">teste h4</p>
+                            </li>
+                            <li id="box-office-revenue">
+                                <h4>Recettes au box-office : </h4>
+                                <p id="box-office-revenue-c2-m5">teste h4</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="modal__footer__button" onclick="closeModalC2M5()">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="movie">
+        <div class="movie_image-container">
+            <img class="movie_image" id="c2-m6-image" src="img/blank-profile-picture.webp" alt="Titanic"/>
+            <div class="movie_overlay">
+                <div class="movie_title">
+                    <h3 id="c2-m6-title">c2-m6</h3>
+                </div>
+
+                <button class="open-modal" onclick="openModalC2M6()">Détails</button>
+                <div class="overlay-c2-m6"></div>
+                <div class="modal-c2-m6">
+                    <div class="modal__header">
+                        <div class="modal__close" onclick="closeModalC2M6()">X</div>
+                        <h2 class="modal__header__title" id="c2-m6-modal-title">Test H2 - C2-M6</h2>
+                    </div>
+                    <div class="modal__body">
+                        <ul>
+                            <li id="genres">
+                                <h4>Genre : </h4>
+                                <p id="genres-c2-m6">teste h4</p>
+                            </li>
+                            <li id="year">
+                                <h4>Date de sortie : </h4>
+                                <p id="year-c2-m6">teste h4</p>
+                            </li>
+                            <li id="classification">
+                                <h4>Classification : </h4>
+                                <p id="classification-c2-m6">tout âge</p>
+                            </li>
+                            <li id="imdb-score">
+                                <h4>Score IMDB : </h4>
+                                <p id="imdb-score-c2-m6">teste h4</p>
+                            </li>
+                            <li id="directors">
+                                <h4>Réalisateur : </h4>
+                                <p id="directors-c2-m6">teste h4</p>
+                            </li>
+                            <li id="actors">
+                                <h4>Acteurs : </h4>
+                                <p id="actors-c2-m6">teste h4</p>
+                            </li>
+                            <li id="duration">
+                                <h4>Durée : </h4>
+                                <p id="duration-c2-m6">teste h4</p>
+                            </li>
+                            <li id="native-country">
+                                <h4>Pays d’origine : </h4>
+                                <p id="native-country-c2-m6">teste h4</p>
+                            </li>
+                            <li id="box-office-revenue">
+                                <h4>Recettes au box-office : </h4>
+                                <p id="box-office-revenue-c2-m6">teste h4</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="modal__footer__button" onclick="closeModalC2M6()">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<button class="show_more_button_c2" onclick="toggleMoviesVisibilityC2()">Voir plus</button>
+
+
+<div class="dropdown">
+    <label for="dropdown-select"><h2>Autres catégories : </h2></label>
+    <div class="select-box">
+
+        <select name="dropdown-select" id="dropdown-select">
+            <option value="all-categories">Toutes catégories</option>
+            <option value="drama">Drama</option>
+            <option value="thriller">Thriller</option>
+            <option value="action">Action</option>
+            <option value="comedy">Comedie</option>
+            <option value="horror">Horreur</option>
+            <option value="mystery">Mystère</option>
+            <option value="history">Histoire</option>
+            <option value="family">Famille</option>
+            <option value="fantasy">Fantasie</option>
+            <option value="sci-fiction">Science-fiction</option>
+            <option value="western">Western</option>
+            <option value="adventure">Aventure</option>
+        </select>
+
+    </div>
+</div>
+
+
+<div class="movies_container" id="moviesContainerC3">
+    <div class="movie">
+        <div class="movie_image-container">
+            <img class="movie_image" id="c3-m1-image" src="img/blank-profile-picture.webp" alt="Titanic"/>
+            <div class="movie_overlay">
+                <h3 id="c3-m1-title">c3-m1</h3>
+
+                <button class="open-modal" onclick="openModalC3M1()">Détails</button>
+                <div class="overlay-c3-m1"></div>
+                <div class="modal-c3-m1">
+                    <div class="modal__header">
+                        <div class="modal__close" onclick="closeModalC3M1()">X</div>
+                        <h2 class="modal__header__title" id="c3-m1-modal-title">Test H2 - C3-M1</h2>
+                    </div>
+                    <div class="modal__body">
+                        <ul>
+                            <li id="genres">
+                                <h4>Genre : </h4>
+                                <p id="genres-c3-m1">teste h4</p>
+                            </li>
+                            <li id="year">
+                                <h4>Date de sortie : </h4>
+                                <p id="year-c3-m1">teste h4</p>
+                            </li>
+                            <li id="classification">
+                                <h4>Classification : </h4>
+                                <p id="classification-c3-m1">tout âge</p>
+                            </li>
+                            <li id="imdb-score">
+                                <h4>Score IMDB : </h4>
+                                <p id="imdb-score-c3-m1">teste h4</p>
+                            </li>
+                            <li id="directors">
+                                <h4>Réalisateur : </h4>
+                                <p id="directors-c3-m1">teste h4</p>
+                            </li>
+                            <li id="actors">
+                                <h4>Acteurs : </h4>
+                                <p id="actors-c3-m1">teste h4</p>
+                            </li>
+                            <li id="duration">
+                                <h4>Durée : </h4>
+                                <p id="duration-c3-m1">teste h4</p>
+                            </li>
+                            <li id="native-country">
+                                <h4>Pays d’origine : </h4>
+                                <p id="native-country-c3-m1">teste h4</p>
+                            </li>
+                            <li id="box-office-revenue">
+                                <h4>Recettes au box-office : </h4>
+                                <p id="box-office-revenue-c3-m1">teste h4</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="modal__footer__button" onclick="closeModalC3M1()">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="movie">
+        <div class="movie_image-container">
+            <img class="movie_image" id="c3-m2-image" src="img/blank-profile-picture.webp" alt="Titanic"/>
+            <div class="movie_overlay">
+                <h3 id="c3-m2-title">c3-m2</h3>
+
+                <button class="open-modal" onclick="openModalC3M1()">Détails</button>
+                <div class="overlay-c3-m2"></div>
+                <div class="modal-c3-m2">
+                    <div class="modal__header">
+                        <div class="modal__close" onclick="closeModalC3M1()">X</div>
+                        <h2 class="modal__header__title" id="c3-m2-modal-title">Test H2 - C3-M2</h2>
+                    </div>
+                    <div class="modal__body">
+                        <ul>
+                            <li id="genres">
+                                <h4>Genre : </h4>
+                                <p id="genres-c3-m2">teste h4</p>
+                            </li>
+                            <li id="year">
+                                <h4>Date de sortie : </h4>
+                                <p id="year-c3-m2">teste h4</p>
+                            </li>
+                            <li id="classification">
+                                <h4>Classification : </h4>
+                                <p id="classification-c3-m2">tout âge</p>
+                            </li>
+                            <li id="imdb-score">
+                                <h4>Score IMDB : </h4>
+                                <p id="imdb-score-c3-m2">teste h4</p>
+                            </li>
+                            <li id="directors">
+                                <h4>Réalisateur : </h4>
+                                <p id="directors-c3-m2">teste h4</p>
+                            </li>
+                            <li id="actors">
+                                <h4>Acteurs : </h4>
+                                <p id="actors-c3-m2">teste h4</p>
+                            </li>
+                            <li id="duration">
+                                <h4>Durée : </h4>
+                                <p id="duration-c3-m2">teste h4</p>
+                            </li>
+                            <li id="native-country">
+                                <h4>Pays d’origine : </h4>
+                                <p id="native-country-c3-m2">teste h4</p>
+                            </li>
+                            <li id="box-office-revenue">
+                                <h4>Recettes au box-office : </h4>
+                                <p id="box-office-revenue-c3-m2">teste h4</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="modal__footer__button" onclick="closeModalC3M1()">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="movie">
+        <div class="movie_image-container">
+            <img class="movie_image" id="c3-m3-image" src="img/blank-profile-picture.webp" alt="Titanic"/>
+            <div class="movie_overlay">
+                <h3 id="c3-m3-title">c3-m3</h3>
+
+                <button class="open-modal" onclick="openModalC3M1()">Détails</button>
+                <div class="overlay-c3-m3"></div>
+                <div class="modal-c3-m3">
+                    <div class="modal__header">
+                        <div class="modal__close" onclick="closeModalC3M1()">X</div>
+                        <h2 class="modal__header__title" id="c3-m3-modal-title">Test H2 - C3-M3</h2>
+                    </div>
+                    <div class="modal__body">
+                        <ul>
+                            <li id="genres">
+                                <h4>Genre : </h4>
+                                <p id="genres-c3-m3">teste h4</p>
+                            </li>
+                            <li id="year">
+                                <h4>Date de sortie : </h4>
+                                <p id="year-c3-m3">teste h4</p>
+                            </li>
+                            <li id="classification">
+                                <h4>Classification : </h4>
+                                <p id="classification-c3-m3">tout âge</p>
+                            </li>
+                            <li id="imdb-score">
+                                <h4>Score IMDB : </h4>
+                                <p id="imdb-score-c3-m3">teste h4</p>
+                            </li>
+                            <li id="directors">
+                                <h4>Réalisateur : </h4>
+                                <p id="directors-c3-m3">teste h4</p>
+                            </li>
+                            <li id="actors">
+                                <h4>Acteurs : </h4>
+                                <p id="actors-c3-m3">teste h4</p>
+                            </li>
+                            <li id="duration">
+                                <h4>Durée : </h4>
+                                <p id="duration-c3-m3">teste h4</p>
+                            </li>
+                            <li id="native-country">
+                                <h4>Pays d’origine : </h4>
+                                <p id="native-country-c3-m3">teste h4</p>
+                            </li>
+                            <li id="box-office-revenue">
+                                <h4>Recettes au box-office : </h4>
+                                <p id="box-office-revenue-c3-m3">teste h4</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="modal__footer__button" onclick="closeModalC3M1()">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="movie">
+        <div class="movie_image-container">
+            <img class="movie_image" id="c3-m4-image" src="img/blank-profile-picture.webp" alt="Titanic"/>
+            <div class="movie_overlay">
+                <h3 id="c3-m4-title">c3-m4</h3>
+
+                <button class="open-modal" onclick="openModalC3M1()">Détails</button>
+                <div class="overlay-c3-m4"></div>
+                <div class="modal-c3-m4">
+                    <div class="modal__header">
+                        <div class="modal__close" onclick="closeModalC3M1()">X</div>
+                        <h2 class="modal__header__title" id="c3-m4-modal-title">Test H2 - C3-M4</h2>
+                    </div>
+                    <div class="modal__body">
+                        <ul>
+                            <li id="genres">
+                                <h4>Genre : </h4>
+                                <p id="genres-c3-m4">teste h4</p>
+                            </li>
+                            <li id="year">
+                                <h4>Date de sortie : </h4>
+                                <p id="year-c3-m4">teste h4</p>
+                            </li>
+                            <li id="classification">
+                                <h4>Classification : </h4>
+                                <p id="classification-c3-m4">tout âge</p>
+                            </li>
+                            <li id="imdb-score">
+                                <h4>Score IMDB : </h4>
+                                <p id="imdb-score-c3-m4">teste h4</p>
+                            </li>
+                            <li id="directors">
+                                <h4>Réalisateur : </h4>
+                                <p id="directors-c3-m4">teste h4</p>
+                            </li>
+                            <li id="actors">
+                                <h4>Acteurs : </h4>
+                                <p id="actors-c3-m4">teste h4</p>
+                            </li>
+                            <li id="duration">
+                                <h4>Durée : </h4>
+                                <p id="duration-c3-m4">teste h4</p>
+                            </li>
+                            <li id="native-country">
+                                <h4>Pays d’origine : </h4>
+                                <p id="native-country-c3-m4">teste h4</p>
+                            </li>
+                            <li id="box-office-revenue">
+                                <h4>Recettes au box-office : </h4>
+                                <p id="box-office-revenue-c3-m4">teste h4</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="modal__footer__button" onclick="closeModalC3M1()">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="movie">
+        <div class="movie_image-container">
+            <img class="movie_image" id="c3-m5-image" src="img/blank-profile-picture.webp" alt="c3-m5-title"/>
+            <div class="movie_overlay">
+                <h3 id="c3-m5-title">c3-m5</h3>
+
+                <button class="open-modal" onclick="openModalC3M1()">Détails</button>
+                <div class="overlay-c3-m5"></div>
+                <div class="modal-c3-m5">
+                    <div class="modal__header">
+                        <div class="modal__close" onclick="closeModalC3M1()">X</div>
+                        <h2 class="modal__header__title" id="c3-m5-modal-title">Test H2 - C3-M5</h2>
+                    </div>
+                    <div class="modal__body">
+                        <ul>
+                            <li id="genres">
+                                <h4>Genre : </h4>
+                                <p id="genres-c3-m5">teste h4</p>
+                            </li>
+                            <li id="year">
+                                <h4>Date de sortie : </h4>
+                                <p id="year-c3-m5">teste h4</p>
+                            </li>
+                            <li id="classification">
+                                <h4>Classification : </h4>
+                                <p id="classification-c3-m5">tout âge</p>
+                            </li>
+                            <li id="imdb-score">
+                                <h4>Score IMDB : </h4>
+                                <p id="imdb-score-c3-m5">teste h4</p>
+                            </li>
+                            <li id="directors">
+                                <h4>Réalisateur : </h4>
+                                <p id="directors-c3-m5">teste h4</p>
+                            </li>
+                            <li id="actors">
+                                <h4>Acteurs : </h4>
+                                <p id="actors-c3-m5">teste h4</p>
+                            </li>
+                            <li id="duration">
+                                <h4>Durée : </h4>
+                                <p id="duration-c3-m5">teste h4</p>
+                            </li>
+                            <li id="native-country">
+                                <h4>Pays d’origine : </h4>
+                                <p id="native-country-c3-m5">teste h4</p>
+                            </li>
+                            <li id="box-office-revenue">
+                                <h4>Recettes au box-office : </h4>
+                                <p id="box-office-revenue-c3-m5">teste h4</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="modal__footer__button" onclick="closeModalC3M1()">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="movie">
+        <div class="movie_image-container">
+            <img class="movie_image" id="c3-m6-image" src="img/blank-profile-picture.webp" alt="Titanic"/>
+            <div class="movie_overlay">
+                <h3 id="c3-m6-title">c3-m6</h3>
+
+                <button class="open-modal" onclick="openModalC3M1()">Détails</button>
+                <div class="overlay-c3-m6"></div>
+                <div class="modal-c3-m6">
+                    <div class="modal__header">
+                        <div class="modal__close" onclick="closeModalC3M1()">X</div>
+                        <h2 class="modal__header__title" id="c3-m6-modal-title">Test H2 - C3-M6</h2>
+                    </div>
+                    <div class="modal__body">
+                        <ul>
+                            <li id="genres">
+                                <h4>Genre : </h4>
+                                <p id="genres-c3-m6">teste h4</p>
+                            </li>
+                            <li id="year">
+                                <h4>Date de sortie : </h4>
+                                <p id="year-c3-m6">teste h4</p>
+                            </li>
+                            <li id="classification">
+                                <h4>Classification : </h4>
+                                <p id="classification-c3-m6">tout âge</p>
+                            </li>
+                            <li id="imdb-score">
+                                <h4>Score IMDB : </h4>
+                                <p id="imdb-score-c3-m6">teste h4</p>
+                            </li>
+                            <li id="directors">
+                                <h4>Réalisateur : </h4>
+                                <p id="directors-c3-m6">teste h4</p>
+                            </li>
+                            <li id="actors">
+                                <h4>Acteurs : </h4>
+                                <p id="actors-c3-m6">teste h4</p>
+                            </li>
+                            <li id="duration">
+                                <h4>Durée : </h4>
+                                <p id="duration-c3-m6">teste h4</p>
+                            </li>
+                            <li id="native-country">
+                                <h4>Pays d’origine : </h4>
+                                <p id="native-country-c3-m6">teste h4</p>
+                            </li>
+                            <li id="box-office-revenue">
+                                <h4>Recettes au box-office : </h4>
+                                <p id="box-office-revenue-c3-m6">teste h4</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="modal__footer__button" onclick="closeModalC3M1()">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<button class="show_more_button_c3" onclick="toggleMoviesVisibilityC3()">Voir plus</button>
+
+</body>
+
+<script src="zzz_best_film/best_film_modal.js"></script>
+<script src="zzz_c1/c1_modal.js"></script>
+<script src="zzz_c2/c2_modal.js"></script>
+<script src="zzz_c3/c3_modal.js"></script>
+
+</html>
