@@ -203,12 +203,12 @@ h1 {
 
 li {
     display: flex;
-    align-items: center; /* Cette propriété assure que les éléments sont alignés verticalement au centre */
+    align-items: center;
 }
 
 h4, p {
-    margin: 0; /* Enlève les marges par défaut pour une meilleure contrôle de l'espacement */
-    display: inline-block; /* Garantit que les éléments sont traités comme des blocs en ligne */
+    margin: 0;
+    display: inline-block;
 }
 
 
@@ -226,7 +226,7 @@ h4, p {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    display: block; /* Centrer le bouton */
+    display: block;
 }
 
 

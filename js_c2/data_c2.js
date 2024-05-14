@@ -78,6 +78,8 @@ fetch(dataUrlC2)
             titleElement.textContent = title;
             const modalTitleElement = document.getElementById(`${prefix}-modal-title`);
             modalTitleElement.textContent = title;
+            const ImageAltElement = document.getElementById(`${prefix}-image`)
+            ImageAltElement.alt = title;
 
             //IMAGE
             const image = movie.image_url;

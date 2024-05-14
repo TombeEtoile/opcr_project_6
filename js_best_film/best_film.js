@@ -20,11 +20,18 @@ fetch(dataUrlBestFilm)
                 bestFilmTitleElement.textContent = bestFilmTitle;
                 const bestFilmModalTitleElement = document.getElementById("best-film-modal-title");
                 bestFilmModalTitleElement.textContent = bestFilmTitle;
+                const bestFilmImageAltElement = document.getElementById("best_film_image_id")
+                bestFilmImageAltElement.alt = bestFilmTitle;
 
                 // IMAGE
                 const bestFilmImage = movieDataBestFilm.image_url;
                 const bestFilmImageElement = document.getElementById("best_film_image_id");
                 bestFilmImageElement.src = bestFilmImage;
+
+                // DESCRIPTION
+                const bestFilmDescription = movieDataBestFilm.description;
+                const bestFilmDescriptionElement = document.getElementById("best-film-description");
+                bestFilmDescriptionElement.textContent = bestFilmDescription
 
                 // GENRE
                 const bestFilmGenres = movieDataBestFilm.genres;
